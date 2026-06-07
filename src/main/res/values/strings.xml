@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">File Recovery Pro</string>
+    <string name="status_developer_enabled">✅ Developer Mode Enabled</string>
+    <string name="status_developer_disabled">❌ Developer Mode OFF - Enable it first!</string>
+    <string name="btn_select_file">📂 Select Storage Dump</string>
+    <string name="btn_start_recovery">▶️ Start Recovery</string>
+    <string name="btn_stop">⏹️ Stop</string>
+    <string name="tier_free">🆓 Free Tier (500MB limit, 5/day)</string>
+    <string name="tier_pro">💎 Pro Tier (10GB limit, Unlimited)</string>
+    <string name="tier_premium">👑 Premium Tier (Unlimited, All Features)</string>
+</resources>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📱 File Recovery Pro"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#1a73e8"
+        android:gravity="center"
+        android:paddingBottom="16dp" />
+
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Initializing..."
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:background="#E8F5E9"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#1B5E20" />
+
+    <TextView
+        android:id="@+id/tier_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🆓 Free Tier"
+        android:textSize="14sp"
+        android:padding="8dp"
+        android:background="#F3E5F5"
+        android:textColor="#4A148C"
+        android:layout_marginTop="8dp" />
+
+    <LinearLayout
+        android:id="@+id/advanced_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recovery Options"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/recovery_scope"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/scope_photos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📷 Photos Only"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/scope_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📁 All File Types" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/select_file_btn"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="📂 Select Storage Dump"
+            android:textSize="14sp"
+            android:background="#2196F3"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/start_carving_btn"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="▶️ Start Recovery"
+                android:textSize="12sp"
+                android:background="#4CAF50"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="4dp" />
+
+            <Button
+                android:id="@+id/stop_btn"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="⏹️ Stop"
+                android:textSize="12sp"
+                android:background="#f44336"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="12dp"
+            android:visibility="gone"
+            style="?android:attr/progressBarStyleHorizontal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recovered Files"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <ListView
+            android:id="@+id/file_list"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="#FFFFFF"
+            android:divider="#E0E0E0"
+            android:dividerHeight="1dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="auto"
+        android:padding="12dp"
+        android:background="#FFF9C4"
+        android:visibility="gone"
+        android:id="@+id/upgrade_panel">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🚀 Upgrade to Pro/Premium"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/upgrade_btn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="View Plans"
+            android:background="#FF9800"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
